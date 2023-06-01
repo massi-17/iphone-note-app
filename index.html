@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <title>Note - iPhone</title>
+</head>
+<body>
+    <div class="container">
+        <div class="outerBlack">
+            <div class="outerWhite">
+                <div class="outerGrey">
+                    <div class="iphonevp">
+                        <div class="top">
+                            <div class="time">09:41</div>
+                            <div class="blackTop">
+                                <div class="micTop"></div>
+                                <div class="FrontCamera"></div>
+                            </div>
+                            <div class="stats">
+                                <div class="signal">
+                                    <i class="fa-solid fa-signal fa-sm"></i>
+                                </div>
+                                <div class="wifii">
+                                    <i class="fa-solid fa-wifi fa-sm"></i>
+                                </div>
+                                <div class="battery">
+                                    <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <header>
+                            <div><i class="fa-solid fa-chevron-left fa-lg"></i>Note</div>
+                            <div>
+                                <div class="circle">
+                                    <span class="dots"><i class="fa-solid fa-ellipsis"></i></span>
+                                </div>
+                                Done
+                            </div>
+                        </header>
+                        <main>
+                            <div id="content"></div>
+                        </main>
+                        <footer>
+                            <div id="plusTools">
+                                +
+                            </div>
+                            <div class="tools" id="toolbar">
+                                <i class="fa-solid fa-table-cells-large"></i>
+                                <i class="fa-solid fa-a"></i>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <i class="fa-solid fa-camera"></i>
+                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-x closeTB"></i>
+                            </div>
+                            <div class="keyboard">
+                                <div class="row1">
+                                    <div class="letter" data-letter="q">q</div>
+                                    <div class="letter">w</div>
+                                    <div class="letter">e</div>
+                                    <div class="letter">r</div>
+                                    <div class="letter">t</div>
+                                    <div class="letter">y</div>
+                                    <div class="letter">u</div>
+                                    <div class="letter">i</div>
+                                    <div class="letter">o</div>
+                                    <div class="letter">p</div>
+                                </div>
+                                <div class="row2">
+                                    <div class="letter">a</div>
+                                    <div class="letter">s</div>
+                                    <div class="letter">d</div>
+                                    <div class="letter">f</div>
+                                    <div class="letter">g</div>
+                                    <div class="letter">h</div>
+                                    <div class="letter">j</div>
+                                    <div class="letter">k</div>
+                                    <div class="letter">l</div>
+                                </div>
+                                <div class="row3">
+                                    <div class="caps capsActive"><i class="fa-solid fa-arrow-up fa-sm"></i></div>
+                                    <div class="letter">z</div>
+                                    <div class="letter">x</div>
+                                    <div class="letter">c</div>
+                                    <div class="letter">v</div>
+                                    <div class="letter">b</div>
+                                    <div class="letter">n</div>
+                                    <div class="letter">m</div>
+                                    <div id="deleteBtn">
+                                        <i class="fa-solid fa-delete-left"></i>
+                                    </div>
+                                </div>
+                                <div class="row4">
+                                    <div id="numbers">123</div>
+                                    <div id="space" data-letter="space">space</div>
+                                    <div id="enter">enter</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="emoji">
+                                    <i class="fa-regular fa-face-grin fa-2xl"></i>
+                                </div>
+                                <div class="mic">
+                                    <i class="fa-solid fa-microphone fa-2xl"></i>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div></div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

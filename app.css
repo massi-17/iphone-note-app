@@ -1,0 +1,260 @@
+:root {
+    --orange: #E1A402;
+    --lightGrey: #F2F3F7;
+    --darkGrey: #D4D7DD;
+    --darkKey: #B3B8C1;
+    --lightKey: #FFFFFF;
+    --darkText: #464646;
+    --lightText: #555657;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'San Francisco', Helvetica, Arial, san-serif;
+}
+body {
+    background-color: #000;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+  }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.outerBlack {
+    border: 1px solid #000000;
+    border-radius: 60px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.outerWhite {
+    border: 2px solid #ffffff;
+    border-radius: 60px;
+}
+.outerGrey {
+    border: 3px solid #D1D4D8;
+    border-radius: 60px;
+}
+.iphonevp {
+    max-width: 450px;
+    width: 100%;
+    height: 80vh;
+    max-height: 900px;
+    min-height: 800px;
+    background-color: white;
+    border: 15px solid black;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.top {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    padding: 0 20px;
+}
+.top > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width: 280px;
+    border-radius: 0 0 30px 30px;
+    justify-self: center;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+.micTop {
+    width: 70px;
+    border-radius: 30px;
+    height: 7px;
+    background-color: #0E0E0E;
+    border: 1px solid var(--darkText);
+}
+.FrontCamera {
+    width: 7px;
+    height: 7px;
+    background-color: #0E0E0E;
+    border: 1px solid #555657;
+    border-radius: 100%;
+}
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: left;
+    width: 100px;
+    font-weight: 800;
+    font-size: 1rem;
+}
+.stats {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+header div:nth-child(2) {
+    font-weight: 600;
+}
+header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+header .circle {
+    border: 2px solid var(--orange);
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .dots {
+   width: 23px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2px;
+}
+main {
+    height: 40%;
+    padding: 20px;
+}
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    color: var(--darkText);
+    line-height: 130%;
+}
+footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   position: relative;
+}
+footer > div {
+    background-color: var(--darkGrey);
+}
+footer > .tools {
+    padding: 10px;
+    background-color: var(--lightGrey);
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 40px;
+}
+.tools > i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tools > i:last-of-type {
+    color: #B3B8C1;
+}
+#plusTools {
+    display:none;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    font-size: 3rem;
+    top: 0;
+    right: 0;
+    transform: rotate(40deg);
+    transition: rotate 2s ease;
+}
+.capsActive {
+    background-color: red;!important
+}
+.row1, .row2, .row3, .row4 {
+    padding: 5px 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.keyboard .letter, #deleteBtn, .caps, #enter, #space, #numbers {
+    cursor: pointer;
+    font-size: 1.7rem;
+    width: 35px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-bottom: 1px solid #B3B8C1;
+}
+.letter:active, .caps:active, #deleteBtn:active, #enter:active, #space:active, #numbers:active {
+    transform: scale(1.3);
+}
+.scaleBtn {
+    transform: scale(1.3);
+}
+.caps,
+#deleteBtn, #enter, #numbers {
+    background-color: var(--darkKey);
+    width: 50px;
+    border-bottom: 1px solid var(--darkText);
+}
+.keyboard .row3 > div:nth-child(1) {
+    margin-right: 10px;
+}
+.keyboard .row3 > div:last-child {
+    margin-left: 10px;
+}
+.keyboard .row4 {
+    font-size: 1rem;
+    padding: 0 3px;
+}
+.keyboard .row4 .letter, #enter, #space, #numbers {
+    font-size: 1rem;
+    width: 100px;
+    font-weight: 600;
+}
+#numbers,
+#enter {
+    background-color: var(--darkKey);
+    border-bottom: 1px solid var(--darkText);
+}
+#space {
+    width: 200px;
+}
+.bottom {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--darkText);
+}
+.bottom > div {
+    cursor: pointer;
+}
+.line {
+   display: flex;
+   justify-content: center;
+    background-color: var(--darkGrey);
+    padding-bottom: 20px;
+}
+.line > div {
+    height: 5px;
+    background-color: black;
+    border-radius: 100px;
+    width: 40%;
+    margin-top: 10px;
+}
